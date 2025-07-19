@@ -1,0 +1,66 @@
+# Rails
+*.rbc
+capybara-*.html
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-*
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
+# Rails logs
+/log/*
+!/log/.keep
+
+# Rails tmp
+/tmp/*
+!/tmp/.keep
+!/tmp/cache/.keep
+
+# Rails storage
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/.keep
+
+# Rails public uploads
+/public/uploads
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ruby version managers
+.rvmrc
+.ruby-version
+.ruby-gemset
+
+# Bundler
+vendor/bundle
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rails credentials (if using older Rails versions)
+config/credentials.yml.enc
+config/master.key
+
+# Bootsnap cache
+tmp/cache/bootsnap*
+
+# Node modules (if using)
+node_modules/ 
