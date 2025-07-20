@@ -14,6 +14,9 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  # Allow ngrok hosts for webhook development
+  config.hosts << "ample-asp-lately.ngrok-free.app"
+
   # Enable server timing
   config.server_timing = true
 

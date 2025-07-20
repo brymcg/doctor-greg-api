@@ -42,11 +42,28 @@ gem "jwt"
 # Serialization
 gem "jsonapi-serializer"
 
+# HTTP client for Terra API
+gem 'httparty'
+
+# Environment variables
+gem 'dotenv-rails'
+
+# Anthropic Claude API
+gem 'anthropic'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem "rspec-rails"
-  gem "factory_bot_rails"
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+
+  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
+  gem "brakeman", require: false
+
+  # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
+  gem "rubocop-rails-omakase", require: false
+
+  # Testing framework
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
